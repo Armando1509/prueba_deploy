@@ -14,7 +14,7 @@ import Navbar from './components/Navbar/Navbar';
 import axios from 'axios'
 
 //axios.defaults.baseURL = 'http://localhost:3001'
-axios.defaults.baseURL = 'https://pruebadeploy-production-abaa.up.railway.app/'
+axios.defaults.baseURL = 'https://prueba-deploy-neon.vercel.app/'
 
 
 //pueden hacer pruebas de su componente importandolo y descomentando la ruta que les correspode (ctrl+k+u)
