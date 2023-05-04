@@ -20,7 +20,7 @@ export const getAllParkingLots = createAsyncThunk(
     'parkingSpaces/getAllParkingLots',
     async () => {
         try {
-            const response = await axios.get(`${ apiUrl }/parking/alls`);
+            const response = await axios.get(`/parking/alls`);
             return response.data;
         } catch (error) {
             console.error(error.message);
@@ -33,7 +33,7 @@ export const getParkingLotById = createAsyncThunk(
     'parkingSpaces/getParkingLotById',
     async (id) => {
         try {
-            const response = await axios.get(`${ apiUrl }/parking/${ id }`);
+            const response = await axios.get(`/parking/${ id }`);
             return response.data;
         } catch (error) {
             console.error(error.message);
@@ -46,7 +46,7 @@ export const getLevelsByParkingLotId = createAsyncThunk(
     'parkingSpaces/getLevelsByParkingLotId',
     async (id) => {
         try {
-            const response = await axios.get(`${ apiUrl }/parking/${ id }/floors`);
+            const response = await axios.get(`/parking/${ id }/floors`);
             return response.data;
         } catch (error) {
             console.error(error.message);
@@ -59,7 +59,7 @@ export const getParkingSpacesByParkingLotId = createAsyncThunk(
     'parkingSpaces/getParkingSpacesByParkingLotId',
     async (id) => {
         try {
-            const response = await axios.get(`${ apiUrl }/parking/${ id }/zones`);
+            const response = await axios.get(`/parking/${ id }/zones`);
             return response.data;
         } catch (error) {
             console.error(error.message);
@@ -72,7 +72,7 @@ export const updateParkingSpaceStatusById = createAsyncThunk(
     'parkingSpaces/updateParkingSpaceStatusById',
     async (selectedParkingSpace) => {
         try {
-            const response = await axios.put(`${ apiUrl }/parking/zone/${ selectedParkingSpace.id }/edit`, selectedParkingSpace);
+            const response = await axios.put(`/parking/zone/${ selectedParkingSpace.id }/edit`, selectedParkingSpace);
             return response.data;
         } catch (error) {
             console.error(error.message);
