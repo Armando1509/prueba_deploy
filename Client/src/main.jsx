@@ -7,7 +7,7 @@ import App from './App.jsx';
 import axios from 'axios'
 
 //axios.defaults.baseURL = 'http://localhost:3001'
-axios.defaults.baseURL = 'https://pruebadeploy-production-abaa.up.railway.app/'
+axios.defaults.baseURL = 'https://pruebadeploy-production-abaa.up.railway.app'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
