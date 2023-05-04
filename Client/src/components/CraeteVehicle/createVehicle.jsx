@@ -59,7 +59,7 @@ export default function CreateVehicle() {
       try {
         console.log(requestData);
         const response = await axios.post('/users/1/vehicle',requestData, {
-        //const response = await axios.post('http://localhost:3001/users/vehicle', JSON.stringify(requestData), {
+        
           headers: {
             'Content-Type': 'application/json'
           }

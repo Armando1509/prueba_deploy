@@ -1,7 +1,7 @@
 import { createAsyncThunk, createAction, createSlice } from "@reduxjs/toolkit";
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:3001';
+
 
 const initialState = {
     allParkingLots: [],
